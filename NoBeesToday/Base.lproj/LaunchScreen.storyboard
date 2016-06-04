@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +17,46 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marie's eigener Pillenwecker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRH-hx-Pba">
+                                <rect key="frame" x="40" y="150" width="520" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Immer an die Pille denken!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nge-Js-VHI">
+                                <rect key="frame" x="40" y="206" width="520" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pill-forgotten" translatesAutoresizingMaskIntoConstraints="NO" id="Jnr-RY-Ihk">
+                                <rect key="frame" x="275" y="243" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="4e8-zb-ti7"/>
+                                    <constraint firstAttribute="height" constant="50" id="GZ8-Jw-HlH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2224845308" green="0.82886618590000005" blue="0.82832056850000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FRH-hx-Pba" secondAttribute="trailing" constant="20" id="63s-Tu-jAe"/>
+                            <constraint firstItem="nge-Js-VHI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="8sn-Tr-0q5"/>
+                            <constraint firstItem="Jnr-RY-Ihk" firstAttribute="top" secondItem="nge-Js-VHI" secondAttribute="bottom" constant="16" id="TWJ-HH-XmD"/>
+                            <constraint firstItem="nge-Js-VHI" firstAttribute="top" secondItem="FRH-hx-Pba" secondAttribute="bottom" constant="8" id="VgV-83-H1p"/>
+                            <constraint firstItem="FRH-hx-Pba" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="VnI-Kb-sFk"/>
+                            <constraint firstItem="FRH-hx-Pba" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="130" id="mUa-pU-pDv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nge-Js-VHI" secondAttribute="trailing" constant="20" id="vVk-0D-s5s"/>
+                            <constraint firstItem="Jnr-RY-Ihk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="y2d-AZ-dYj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="75" y="400"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pill-forgotten" width="50" height="50"/>
+    </resources>
 </document>

@@ -7,21 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5195A661CFF00FB00B687FF /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5195A651CFF00FB00B687FF /* SettingsTableViewController.swift */; };
+		C52B8F101CFE301A00C94330 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52B8F0F1CFE301A00C94330 /* CoreData.framework */; };
+		C52B8F131CFE306300C94330 /* PillDay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C52B8F111CFE306300C94330 /* PillDay.xcdatamodeld */; };
+		C52B8F161CFE314400C94330 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B8F151CFE314400C94330 /* DataController.swift */; };
+		C52B8F181CFE55A200C94330 /* PillDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52B8F171CFE55A200C94330 /* PillDayModel.swift */; };
 		C549E3B31CF9BC00005CD1E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549E3B21CF9BC00005CD1E8 /* AppDelegate.swift */; };
-		C549E3B51CF9BC00005CD1E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549E3B41CF9BC00005CD1E8 /* ViewController.swift */; };
 		C549E3B81CF9BC00005CD1E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C549E3B61CF9BC00005CD1E8 /* Main.storyboard */; };
 		C549E3BA1CF9BC00005CD1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C549E3B91CF9BC00005CD1E8 /* Assets.xcassets */; };
 		C549E3BD1CF9BC00005CD1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C549E3BB1CF9BC00005CD1E8 /* LaunchScreen.storyboard */; };
+		C549E3C51CF9D3DE005CD1E8 /* TakingPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C549E3C41CF9D3DE005CD1E8 /* TakingPlanViewController.swift */; };
+		C57A25DB1CF9D90E00D087F6 /* PillCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57A25DA1CF9D90E00D087F6 /* PillCalendarCell.swift */; };
+		C57B68D61D008D3800BC4CE0 /* SettingsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57B68D51D008D3800BC4CE0 /* SettingsDetailViewController.swift */; };
+		C57B68D81D009BEE00BC4CE0 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57B68D71D009BEE00BC4CE0 /* StartUpViewController.swift */; };
+		C57C96EA1CFC7E11003FA4A8 /* TakingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57C96E91CFC7E11003FA4A8 /* TakingPlan.swift */; };
+		C5CC69281CFEE62100A3A32A /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CC69271CFEE62100A3A32A /* NotificationService.swift */; };
+		C5CC692C1CFEF55500A3A32A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CC692B1CFEF55500A3A32A /* Settings.swift */; };
+		C5EBEEE71CFB3E4B0017202D /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBEEE61CFB3E4B0017202D /* GlobalValues.swift */; };
+		C5EBEEE91CFB5A670017202D /* PillDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBEEE81CFB5A670017202D /* PillDay.swift */; };
+		C5EBEEEB1CFB5EDA0017202D /* TakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBEEEA1CFB5EDA0017202D /* TakingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5195A651CFF00FB00B687FF /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		C52B8F0F1CFE301A00C94330 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C52B8F121CFE306300C94330 /* PillDay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PillDay.xcdatamodel; sourceTree = "<group>"; };
+		C52B8F151CFE314400C94330 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C52B8F171CFE55A200C94330 /* PillDayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PillDayModel.swift; sourceTree = "<group>"; };
 		C549E3AF1CF9BC00005CD1E8 /* NoBeesToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoBeesToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C549E3B21CF9BC00005CD1E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C549E3B41CF9BC00005CD1E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C549E3B71CF9BC00005CD1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C549E3B91CF9BC00005CD1E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C549E3BC1CF9BC00005CD1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C549E3BE1CF9BC00005CD1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C549E3C41CF9D3DE005CD1E8 /* TakingPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakingPlanViewController.swift; path = ../TakingPlanViewController.swift; sourceTree = "<group>"; };
+		C57A25DA1CF9D90E00D087F6 /* PillCalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PillCalendarCell.swift; sourceTree = "<group>"; };
+		C57B68D51D008D3800BC4CE0 /* SettingsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDetailViewController.swift; sourceTree = "<group>"; };
+		C57B68D71D009BEE00BC4CE0 /* StartUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
+		C57C96E91CFC7E11003FA4A8 /* TakingPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakingPlan.swift; sourceTree = "<group>"; };
+		C5CC69271CFEE62100A3A32A /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		C5CC692B1CFEF55500A3A32A /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C5EBEEE61CFB3E4B0017202D /* GlobalValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
+		C5EBEEE81CFB5A670017202D /* PillDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PillDay.swift; sourceTree = "<group>"; };
+		C5EBEEEA1CFB5EDA0017202D /* TakingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,15 +57,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52B8F101CFE301A00C94330 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C52B8F141CFE306C00C94330 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C52B8F111CFE306300C94330 /* PillDay.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		C549E3A61CF9BC00005CD1E8 = {
 			isa = PBXGroup;
 			children = (
+				C52B8F0F1CFE301A00C94330 /* CoreData.framework */,
 				C549E3B11CF9BC00005CD1E8 /* NoBeesToday */,
 				C549E3B01CF9BC00005CD1E8 /* Products */,
 			);
@@ -54,14 +92,59 @@
 		C549E3B11CF9BC00005CD1E8 /* NoBeesToday */ = {
 			isa = PBXGroup;
 			children = (
+				C52B8F141CFE306C00C94330 /* CoreData */,
+				C57C96E81CFC7C75003FA4A8 /* Model */,
+				C5EBEEE51CFB3E3F0017202D /* Global */,
+				C5EBEEE41CFB3E1E0017202D /* View */,
 				C549E3B21CF9BC00005CD1E8 /* AppDelegate.swift */,
-				C549E3B41CF9BC00005CD1E8 /* ViewController.swift */,
 				C549E3B61CF9BC00005CD1E8 /* Main.storyboard */,
-				C549E3B91CF9BC00005CD1E8 /* Assets.xcassets */,
 				C549E3BB1CF9BC00005CD1E8 /* LaunchScreen.storyboard */,
+				C549E3B91CF9BC00005CD1E8 /* Assets.xcassets */,
 				C549E3BE1CF9BC00005CD1E8 /* Info.plist */,
 			);
 			path = NoBeesToday;
+			sourceTree = "<group>";
+		};
+		C57B68D41D008D2000BC4CE0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C5195A651CFF00FB00B687FF /* SettingsTableViewController.swift */,
+				C57B68D51D008D3800BC4CE0 /* SettingsDetailViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		C57C96E81CFC7C75003FA4A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5EBEEE81CFB5A670017202D /* PillDay.swift */,
+				C52B8F171CFE55A200C94330 /* PillDayModel.swift */,
+				C57C96E91CFC7E11003FA4A8 /* TakingPlan.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C5EBEEE41CFB3E1E0017202D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C57B68D41D008D2000BC4CE0 /* Settings */,
+				C549E3C41CF9D3DE005CD1E8 /* TakingPlanViewController.swift */,
+				C57A25DA1CF9D90E00D087F6 /* PillCalendarCell.swift */,
+				C5EBEEEA1CFB5EDA0017202D /* TakingViewController.swift */,
+				C57B68D71D009BEE00BC4CE0 /* StartUpViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C5EBEEE51CFB3E3F0017202D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				C5EBEEE61CFB3E4B0017202D /* GlobalValues.swift */,
+				C52B8F151CFE314400C94330 /* DataController.swift */,
+				C5CC69271CFEE62100A3A32A /* NotificationService.swift */,
+				C5CC692B1CFEF55500A3A32A /* Settings.swift */,
+			);
+			name = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +179,7 @@
 				TargetAttributes = {
 					C549E3AE1CF9BC00005CD1E8 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5DVZCE6TBK;
 					};
 				};
 			};
@@ -135,8 +219,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C549E3B51CF9BC00005CD1E8 /* ViewController.swift in Sources */,
 				C549E3B31CF9BC00005CD1E8 /* AppDelegate.swift in Sources */,
+				C5195A661CFF00FB00B687FF /* SettingsTableViewController.swift in Sources */,
+				C5CC69281CFEE62100A3A32A /* NotificationService.swift in Sources */,
+				C5CC692C1CFEF55500A3A32A /* Settings.swift in Sources */,
+				C5EBEEE91CFB5A670017202D /* PillDay.swift in Sources */,
+				C5EBEEE71CFB3E4B0017202D /* GlobalValues.swift in Sources */,
+				C52B8F131CFE306300C94330 /* PillDay.xcdatamodeld in Sources */,
+				C52B8F161CFE314400C94330 /* DataController.swift in Sources */,
+				C57B68D61D008D3800BC4CE0 /* SettingsDetailViewController.swift in Sources */,
+				C57C96EA1CFC7E11003FA4A8 /* TakingPlan.swift in Sources */,
+				C57B68D81D009BEE00BC4CE0 /* StartUpViewController.swift in Sources */,
+				C549E3C51CF9D3DE005CD1E8 /* TakingPlanViewController.swift in Sources */,
+				C52B8F181CFE55A200C94330 /* PillDayModel.swift in Sources */,
+				C5EBEEEB1CFB5EDA0017202D /* TakingViewController.swift in Sources */,
+				C57A25DB1CF9D90E00D087F6 /* PillCalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +348,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NoBeesToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MK.NoBeesToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -262,10 +363,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NoBeesToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MK.NoBeesToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -288,8 +393,22 @@
 				C549E3C31CF9BC00005CD1E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C52B8F111CFE306300C94330 /* PillDay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C52B8F121CFE306300C94330 /* PillDay.xcdatamodel */,
+			);
+			currentVersion = C52B8F121CFE306300C94330 /* PillDay.xcdatamodel */;
+			path = PillDay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C549E3A71CF9BC00005CD1E8 /* Project object */;
 }

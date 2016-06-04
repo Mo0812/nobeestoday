@@ -16,6 +16,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let completeAction = UIMutableUserNotificationAction()
+        completeAction.identifier = "PILL_TAKEN" // the unique identifier for this action
+        completeAction.title = "Pille genommen" // title for the action button
+        completeAction.activationMode = .Background // UIUserNotificationActivationMode.Background - don't bring app to foreground
+        completeAction.authenticationRequired = false // don't require unlocking before performing action
+        completeAction.destructive = false // display action in red
+        
+        let remindAction = UIMutableUserNotificationAction()
+        remindAction.identifier = "REMIND"
+        remindAction.title = "Später erinnern"
+        remindAction.activationMode = .Background
+        remindAction.destructive = true
+        
+        let pillCategory = UIMutableUserNotificationCategory() // notification categories allow us to create groups of actions that we can associate with a notification
+        pillCategory.identifier = "PILL_CATEGORY"
+        pillCategory.setActions([completeAction, remindAction], forContext: .Default) // UIUserNotificationActionContext.Default (4 actions max)
+        pillCategory.setActions([remindAction, completeAction], forContext: .Minimal)
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: (NSSet(array: [pillCategory])) as? Set<UIUserNotificationCategory>))
+        
+        if(Settings.loadSavedValues()) {
+        
+            if(GlobalValues.fristTakingDate!.dateByAddingTimeInterval(60*60*24*28).timeIntervalSinceReferenceDate < NSDate().timeIntervalSinceReferenceDate) {
+                GlobalValues.setFirstTakingDate(GlobalValues.fristTakingDate!.dateByAddingTimeInterval(60*60*24*28))
+                Settings.changeSavedValues()
+            }
+            
+            GlobalValues.takingPlan = TakingPlan(from: GlobalValues.fristTakingDate!)
+            
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController: StartUpViewController = storyboard.instantiateViewControllerWithIdentifier("ViewController") as! StartUpViewController
+            
+            window?.rootViewController = viewController
+            window?.makeKeyAndVisible()
+            
+            print("Error Loading Defaults");
+        }
+        
         return true
     }
 
@@ -41,6 +81,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+        switch (identifier!) {
+        case "PILL_TAKEN":
+            GlobalValues.takingPlan?.addDay(NSDate(), state: PillDay.PillDayState.PillTaken)
+            NotificationService.cancelStressNotificationsOnForgotten()
+            break;
+        case "REMIND":
+            print("Weiter")
+            break;
+        default: // switch statements must be exhaustive - this condition should never be met
+            print("Error: unexpected notification action identifier!")
+        }
+        completionHandler() // per developer documentation, app will terminate if we fail to call this
+    }
+    
 }
 
